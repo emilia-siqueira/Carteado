@@ -6,10 +6,33 @@
     {
         static void Main(string[] args)
         {
-            Jogo jogo = new Jogo();
-            jogo.Jogar();
+            List<Carta> CriarCartas()
+            {
+                List<Carta> cartas = new List<Carta>();
+                for (int i = 1; i <= 100; i++)
+                {
+                    cartas.Add(new Carta(i));
+                }
+                return cartas;
+            }
 
-            // jogo.VerificarGanhador(); é inacessível porque é private
+            List<Carta> CriarCartasComMultiplicador()
+            {
+                List<Carta> cartas = new List<Carta>();
+                for (int i = 1; i <= 100; i++)
+                {
+                    for (int j = 1; j <= 4; j++) {
+                        cartas.Add(new CartaComMultiplicador(i, j));
+                    }
+                }
+                return cartas;
+            }
+
+            //Baralho baralho = new Baralho(CriarCartas());
+            Baralho baralho = new Baralho(CriarCartasComMultiplicador());
+
+            Jogo jogo = new Jogo(baralho);
+            jogo.Jogar();
         }
     }
 }

@@ -2,28 +2,23 @@ namespace Modelos;
 
 class Baralho
 {
-    List<Carta> Cartas;
+    public List<Carta> Cartas { get; private set; }
 
+    [Obsolete("Use Baralho(list<Carta>) constructor instead.")]
     public Baralho()
     {
         var baralho = new List<Carta>();
 
         for (int i = 1; i <= 100; i++)
         {
-            baralho.Add(new Carta(i));
+            baralho.Add(new Carta(i)); // Está estranho o baralho ter que saber demais sobre a Carta
         }
         Cartas = baralho;
     }
 
-    public Baralho(int tamanho)
+    public Baralho(List<Carta> cartas)
     {
-        var baralho = new List<Carta>();
-
-        for (int i = 1; i <= tamanho; i++)
-        {
-            baralho.Add(new Carta(i));
-        }
-        Cartas = baralho;
+        Cartas = cartas;
     }
 
     public Carta DarCarta()

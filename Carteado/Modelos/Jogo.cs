@@ -1,19 +1,14 @@
 namespace Modelos;
 
-class Jogo
+using Interfaces;
+
+class Jogo<T>
 {
-    private IBaralho<Carta> Baralho { get; set; }
-    private Jogador Jogador1 { get; set; }
-    private Jogador Jogador2 { get; set; }
+    private IBaralho<T> Baralho { get; set; }
+    private IJogador<T> Jogador1 { get; set; }
+    private IJogador<T> Jogador2 { get; set; }
 
-    public Jogo(IBaralho<Carta> baralho)
-    {
-        Baralho = baralho;
-        Jogador1 = new Jogador();
-        Jogador2 = new Jogador();
-    }
-
-    public Jogo(IBaralho<Carta> baralho, Jogador jogador1, Jogador jogador2)
+    public Jogo(IBaralho<T> baralho, IJogador<T> jogador1, IJogador<T> jogador2)
     {
         Baralho = baralho;
         Jogador1 = jogador1;
@@ -23,8 +18,8 @@ class Jogo
     public void Jogar()
     {
         Baralho.Embaralhar();
-        Jogador1.Carta = Baralho.Entregar();
-        Jogador2.Carta = Baralho.Entregar();
+        Jogador1.PegarNovoItem(Baralho.Entregar());
+        Jogador2.PegarNovoItem(Baralho.Entregar());
 
         VerificarGanhador();
     }
@@ -32,17 +27,17 @@ class Jogo
     private void VerificarGanhador()
     {
 
-        if (Jogador1.Carta.Pontuacao() > Jogador2.Carta.Pontuacao())
+        if (Jogador1.Pontos > Jogador2.Pontos)
         {
-            Console.WriteLine($"Jogador 1 ganhou! Carta: {Jogador1.Carta.Pontuacao()} vs Carta: {Jogador2.Carta.Pontuacao()}");
+            Console.WriteLine($"Jogador 1 ganhou! Carta: {Jogador1.Pontos} vs Carta: {Jogador2.Pontos}");
         }
-        else if (Jogador2.Carta.Pontuacao() > Jogador1.Carta.Pontuacao())
+        else if (Jogador2.Pontos > Jogador1.Pontos)
         {
-            Console.WriteLine($"Jogador 2 ganhou! Carta: {Jogador1.Carta.Pontuacao()} vs Carta: {Jogador2.Carta.Pontuacao()}");
+            Console.WriteLine($"Jogador 2 ganhou! Carta: {Jogador1.Pontos} vs Carta: {Jogador2.Pontos}");
         }
         else
         {
-            Console.WriteLine($"Empate! Carta: {Jogador1.Carta.Pontuacao()} vs Carta: {Jogador2.Carta.Pontuacao()}");
+            Console.WriteLine($"Empate! Carta: {Jogador1.Pontos} vs Carta: {Jogador2.Pontos}");
         }
     }
 }

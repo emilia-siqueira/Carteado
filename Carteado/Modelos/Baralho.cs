@@ -1,5 +1,7 @@
 namespace Modelos;
 
+using Interfaces;
+
 class Baralho<T> : IBaralho<T>
 {
     public List<T> Cartas { get; private set; }

@@ -1,6 +1,8 @@
+namespace Interfaces;
+
 interface IBaralho<T> : IEmbaralhar, IEntregar<T>
 {
-    
+
 }
 
 interface IEmbaralhar

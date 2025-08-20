@@ -30,9 +30,9 @@
             }
 
             //Baralho baralho = new Baralho(CriarCartas());
-            IBaralho<Carta> baralho = new Baralho<Carta>(CriarCartasComMultiplicador());
+            Baralho<Carta> baralho = new Baralho<Carta>(CriarCartasComMultiplicador());
 
-            Jogo jogo = new Jogo(baralho);
+            Jogo<Carta> jogo = new Jogo<Carta>(baralho, new Jogador<Carta>(), new Jogador<Carta>());
             jogo.Jogar();
         }
     }

@@ -1,8 +1,8 @@
-using System.Diagnostics.Contracts;
+using Interfaces;
 
 namespace Modelos;
 
-class Carta
+class Carta : IPontuacao
 {
     private int Valor;
 
@@ -11,10 +11,7 @@ class Carta
         Valor = valor;
     }
 
-    virtual public int Pontuacao()
-    {
-        return Valor;
-    }
+    public virtual int Pontos { get { return Valor; } }
 }
 
 class CartaComMultiplicador : Carta
@@ -26,8 +23,5 @@ class CartaComMultiplicador : Carta
         Multiplicador = multiplicador;
     }
 
-    override public int Pontuacao()
-    {
-        return base.Pontuacao() * Multiplicador;
-    }
+    public override int Pontos { get { return base.Pontos * Multiplicador; } }
 }

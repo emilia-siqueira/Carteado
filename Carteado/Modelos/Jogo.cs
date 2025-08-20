@@ -2,25 +2,18 @@ namespace Modelos;
 
 class Jogo
 {
-    private Baralho Baralho { get; set; }
+    private IBaralho<Carta> Baralho { get; set; }
     private Jogador Jogador1 { get; set; }
     private Jogador Jogador2 { get; set; }
 
-    public Jogo()
-    {
-        Baralho = new Baralho();
-        Jogador1 = new Jogador();
-        Jogador2 = new Jogador();
-    }
-
-    public Jogo(Baralho baralho)
+    public Jogo(IBaralho<Carta> baralho)
     {
         Baralho = baralho;
         Jogador1 = new Jogador();
         Jogador2 = new Jogador();
     }
 
-    public Jogo(Baralho baralho, Jogador jogador1, Jogador jogador2)
+    public Jogo(IBaralho<Carta> baralho, Jogador jogador1, Jogador jogador2)
     {
         Baralho = baralho;
         Jogador1 = jogador1;
@@ -30,8 +23,8 @@ class Jogo
     public void Jogar()
     {
         Baralho.Embaralhar();
-        Jogador1.Carta = Baralho.DarCarta();
-        Jogador2.Carta = Baralho.DarCarta();
+        Jogador1.Carta = Baralho.Entregar();
+        Jogador2.Carta = Baralho.Entregar();
 
         VerificarGanhador();
     }

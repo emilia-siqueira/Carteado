@@ -21,7 +21,8 @@
                 List<Carta> cartas = new List<Carta>();
                 for (int i = 1; i <= 100; i++)
                 {
-                    for (int j = 1; j <= 4; j++) {
+                    for (int j = 1; j <= 4; j++)
+                    {
                         cartas.Add(new CartaComMultiplicador(i, j));
                     }
                 }
@@ -29,7 +30,7 @@
             }
 
             //Baralho baralho = new Baralho(CriarCartas());
-            Baralho baralho = new Baralho(CriarCartasComMultiplicador());
+            IBaralho<Carta> baralho = new Baralho<Carta>(CriarCartasComMultiplicador());
 
             Jogo jogo = new Jogo(baralho);
             jogo.Jogar();

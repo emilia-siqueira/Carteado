@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|c:\\users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\carteado\\carteado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|solutionrelative:carteado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|c:\\users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\carteado\\carteado\\modelos\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|solutionrelative:carteado\\modelos\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|c:\\users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\carteado\\carteado\\modelos\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|solutionrelative:carteado\\modelos\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|c:\\users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\carteado\\carteado\\modelos\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|solutionrelative:carteado\\modelos\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|c:\\users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\carteado\\carteado\\modelos\\baralho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62AC445C-A37C-7686-66A6-CB8857AAD844}|Carteado\\Carteado.csproj|solutionrelative:carteado\\modelos\\baralho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Jogador.cs",
+              "DocumentMoniker": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Jogador.cs",
+              "RelativeDocumentMoniker": "Carteado\\Modelos\\Jogador.cs",
+              "ToolTip": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Jogador.cs",
+              "RelativeToolTip": "Carteado\\Modelos\\Jogador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T12:18:22.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Baralho.cs",
+              "DocumentMoniker": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Baralho.cs",
+              "RelativeDocumentMoniker": "Carteado\\Modelos\\Baralho.cs",
+              "ToolTip": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Baralho.cs",
+              "RelativeToolTip": "Carteado\\Modelos\\Baralho.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T09:58:31.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Program.cs",
+              "RelativeDocumentMoniker": "Carteado\\Program.cs",
+              "ToolTip": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Program.cs",
+              "RelativeToolTip": "Carteado\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T08:17:11.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Jogo.cs",
+              "DocumentMoniker": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Jogo.cs",
+              "RelativeDocumentMoniker": "Carteado\\Modelos\\Jogo.cs",
+              "ToolTip": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Jogo.cs",
+              "RelativeToolTip": "Carteado\\Modelos\\Jogo.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T20:59:38.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Carta.cs",
+              "DocumentMoniker": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Carta.cs",
+              "RelativeDocumentMoniker": "Carteado\\Modelos\\Carta.cs",
+              "ToolTip": "C:\\Users\\emilia\\projetos\\projeto-final-emilia-siqueira-poo\\Carteado\\Carteado\\Modelos\\Carta.cs",
+              "RelativeToolTip": "Carteado\\Modelos\\Carta.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T20:36:09.87Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

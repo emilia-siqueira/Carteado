@@ -23,6 +23,7 @@ class Baralho<T> : IBaralho<T>
     {
         var rand = new Random();
         Cartas = Cartas.OrderBy(x => rand.Next()).ToList();
+
     }
 
 }

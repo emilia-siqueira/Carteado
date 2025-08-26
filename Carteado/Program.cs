@@ -1,6 +1,8 @@
 ﻿namespace Carteado
 {
-    using Modelos;
+    using global::Modelos;
+    using Modelos.Jogos;
+
     using static System.Net.Mime.MediaTypeNames;
 
     class Program
@@ -50,17 +52,7 @@
 
         static void PreparaJogo(string opcao)
         {
-
-
-            List<Carta> CriarCartas()
-            {
-                List<Carta> cartas = new List<Carta>();
-                for (int i = 1; i <= 100; i++)
-                {
-                    cartas.Add(new Carta(i));
-                }
-                return cartas;
-            }
+            Carta carta = new Carta(60);
 
             List<Carta> CriarCartasComMultiplicador()
             {
@@ -75,9 +67,20 @@
                 return cartas;
             }
 
-            Baralho<Carta> baralho = new Baralho<Carta>(CriarCartasComMultiplicador());
+            var baralho = new Baralho<Carta>(CriarCartasComMultiplicador());
+            var jogador1 = new Jogador<Carta>();
+            var jogador2 = new Jogador<Carta>();
 
-            Jogo<Carta> jogo = new Jogo<Carta>(baralho, new Jogador<Carta>(), new Jogador<Carta>(), opcao);
+            
+
+            JogoBase<Carta> jogo = opcao switch
+            {
+                "1" => new JogoMaiorCarta<Carta>(baralho, jogador1, jogador2),
+                "2" => new JogoParOuImpar<Carta>(baralho, jogador1, jogador2),
+                "3" => new JogoBatalha<Carta>(baralho, jogador1, jogador2),
+                _ => throw new ArgumentException("Tipo de jogo inválido")
+            };
+
             jogo.Jogar();
 
         }

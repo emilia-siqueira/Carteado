@@ -2,7 +2,8 @@ using Interfaces;
 
 namespace Modelos;
 
-class Carta : IPontuacao
+
+public class Carta : IPontuacao
 {
     private int Valor;
 
@@ -11,10 +12,18 @@ class Carta : IPontuacao
         Valor = valor;
     }
 
+    public Carta(string valorComoTexto)
+    {
+        Valor = int.Parse(valorComoTexto);
+    }
+
     public virtual int Pontos { get { return Valor; } }
+
+
+
 }
 
-class CartaComMultiplicador : Carta
+public class CartaComMultiplicador : Carta
 {
     public int Multiplicador { get; private set; }
 
